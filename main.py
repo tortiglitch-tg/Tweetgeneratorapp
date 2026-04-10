@@ -19,10 +19,9 @@ gemini_model = ChatGoogleGenerativeAI(model = "gemini-2.5-flash")
 # Create LLM chain using the prompt template and model
 tweet_chain = tweet_prompt | gemini_model
 
-
 st.header("Tweet Generator - Kasyap")
 
-st.subheader("Generate tweets using Generative AI")
+st.subheader("Generate tweets using Gen AI")
 
 topic = st.text_input("Topic")
 
