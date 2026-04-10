@@ -29,4 +29,4 @@ number = st.number_input("Number of tweets", min_value = 1, max_value = 10, valu
 
 if st.button("Generate"):
     tweets = tweet_chain.invoke({"number" : number, "topic" : topic})
-    st.write(tweets.content
+    st.write(tweets.content)
